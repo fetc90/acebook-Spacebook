@@ -1,3 +1,11 @@
+## Standups
+
+- Day four
+ - Devise: recommended password encryption method
+ - Sign in branch merged with master
+ - Posts will include user id
+ -
+
 ## Sprints
 
 *First Sprint*
@@ -16,6 +24,36 @@ Day two:
 * Develop features
 
 ---
+
+## Retros
+
+Day four
+
+- Lisa/ Yemi (afternoon)/ Frankie/ Nicholas (morning)
+- - Getting in earlier (9:30) was good, helped us be more productive in the morning
+ - Following the intro to rails tutorial was extremely helpful
+ - Testing the model in rails also very beneficial
+ - Created an infinite loop, able to fix! Nice!
+ - When a user signs up they are redirected to the sign up/ in page
+ - Stores user information in the users table
+- Yemi (morning)/ Michael/ Nicholas (afternoon)/ Laurence
+ - Edit and delete posts
+ - Edit redirects to posts/id/edit
+ - Redirects back to posts page after either action
+- Tomorrow
+ - Change the root to the sign in page? (Ask client)
+ - Travis is not deploying to heroku
+ - Merge sign up with master
+ - Finish the sign in page
+ - Improvements to process
+ - Code review - add comments on pull requests so we are able to bring them up/ discuss in retros + have documentation of our learning
+
+
+### Integration method
+
+Instead of a standard clone from and push straight to master, we implemented a different method:
+
+![integration](./images/Integration method.png)
 
 ### Setting up local databases
 
@@ -108,8 +146,18 @@ Heroku is a hosting platform for the app to be publicly available.
 be added to the Procfile?
 - Create a Procfile in the root directory and add `web: bundle exec rackup  -p $PORT` - This
 gives an instruction to Heroku to run the app with a dynamically set port.  
-- Visit https://acebook-spacebook.herokuapp.com/ 
+- Visit https://acebook-spacebook.herokuapp.com/
 =======
 
 
- 
+### Co authoring commits so everyone gets credit for everything they work on
+
+Add two empty lines in the commit message and then add the relevant tags:
+```
+Co-authored-by: LisaMcCormack <lisamccormack85@gmail.com>
+Co-authored-by: fetc90 <francescachater@gmail.com>
+Co-authored-by: LaurenceTaylor <ltaylorapp@gmail.com>
+Co-authored-by: yem82 <yemiadebayo60@gmail.com>
+Co-authored-by: hughbric <mhughes36@live.co.uk>
+Co-authored-by: n3ttl3t <n3ttlt@gmail.com>
+```
