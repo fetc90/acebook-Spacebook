@@ -14,7 +14,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      wall = Wall.create(user_id: @user.id)
+      Wall.create(user_id: @user.id)
       redirect_to users_path
     else
       unacceptable_password_notice(@user)

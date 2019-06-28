@@ -13,8 +13,8 @@
   </head>
 
   <body class='bg bg_2'>
-    <%= yield %>
 
+    <%= yield %>
     <span id='url'></span>
 
     <% @posts.each do |post| %>
@@ -22,18 +22,18 @@
         <% user = User.find(post.user_id) %>
         <% wall = Wall.find(post.wall_id) %>
         <% wall_owner = User.find(wall.user_id) %>
-
-
         <% if user.name == wall_owner.name %>
-          <p><strong><%= link_to(user.name, user_path(user)) %></strong></p>
+          <p class="titleFont"><strong><%= link_to(user.name, user_path(user)) %></strong></p>
         <% else %>
-          <p><strong><%= link_to(user.name, user_path(user)) %> --> <%= link_to(wall_owner.name, user_path(wall_owner)) %></strong></p>
+          <p class="titleFont"><strong><%= link_to(user.name, user_path(user)) %> --> <%= link_to(wall_owner.name, user_path(wall_owner)) %></strong></p>
         <% end %>
-        <p class="message"><%= simple_format(post.message) %></p>
-        <p class="message_timestamp"><%= post.created_at.strftime("%Y-%m-%d %H:%M") %></p>
-        <p class="message_buttons"><%= link_to 'Delete', post_path(post), method: :delete %>
+        <p class="message titleFont"><%= simple_format(post.message) %></p>
+        <p class="message_timestamp titleFont"><%= post.created_at.strftime("%Y-%m-%d %H:%M") %></p>
+        <p class="message_buttons titleFont"><%= link_to 'Delete', post_path(post), method: :delete %>
         <%= link_to 'Edit', edit_post_path(post) %></p>
       </div>
+       <br>
+       <br>
     <% end %>
   </body>
 </html>
