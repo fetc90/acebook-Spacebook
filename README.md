@@ -65,9 +65,9 @@ See [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## Authors' Details
 
-Co-authored-by: LisaMcCormack <lisamccormack85@gmail.com>
-Co-authored-by: fetc90 <francescachater@gmail.com>
-Co-authored-by: yem82 <yemiadebayo60@gmail.com>
-Co-authored-by: n3ttl3t <n3ttl3t@gmail.com>
-Co-authored-by: LaurenceTaylor <ltaylorapp@gmail.com>
-Co-authored-by: hughbric <mhughes36@live.co.uk>
+Co-authored-by: LisaMcCormack 
+Co-authored-by: fetc90 
+Co-authored-by: yem82
+Co-authored-by: n3ttl3t
+Co-authored-by: LaurenceTaylor 
+Co-authored-by: hughbric 
